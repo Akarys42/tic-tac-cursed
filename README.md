@@ -1,29 +1,40 @@
-# Quilt Template Mod
+*Tic-Tac-Toe made with only 19,682 recipes. Not cursed at all!*
 
-The official Quilt template mod. You can use it as a template for your own mods!
+# Tic-Tac-Cursed
 
-## Usage
+Tic-Tac-Cursed allows you to play Tic-Tac-Toe directly in your crafting table!
 
-In order to use this mod as a template:
+[![Example](./medias/example.png)](./medias/example.png)
 
-1. Create a new repository from this template with `Use this template`
-2. Clone the recently-created repo on your PC
-3. Make the necessary changes in order to make it yours:
-    - Update `gradle.properties` in order to use your Maven group and mod ID
-        - If you don't know which Maven group to use, and you are planning to host the mod's source code on GitHub, use `io.github.<Your_Username_Here>`
-    - Update `quilt.mod.json` in order to reflect your mod's metadata
-        - If you are planning to include (jar-in-jar) a mod, don't forget to declare its dependency on it!
-        - The icon provided here is a placeholder one. If you aren't able to replace it yet, you can delete it and remove the "icon" property
-    - Create a LICENSE file for this mod! If you don't know which license to use, check out [here](https://choosealicense.com/).
-        - If you use `LICENSE.md`, don't forget to update the buildscript in order to use that file name!
-        - In `quilt.mod.json`, don't forget to put the license's [SPDX identifier](https://spdx.org/licenses/) under the `"license"` property in `"metadata"`.
-        - The GPLv3 and AGPLv3 are not valid mod licenses, so you can use almost any license except for those.
-    - Update the Java sub-directory structure so it reflects your Maven group
-    - If the dependencies on `gradle/libs.versions.toml` isn't up-to-date, feel free to update them! The [linked utility](https://lambdaurora.dev/tools/import_quilt.html) should help you in this easy and quick process.
-4. The mod is now ready to be worked on!
+## Installation
 
-## License
+Simply download the latest version straight from our [Modrinth page](https://modrinth.com/mod/tic-tac-cursed).
+It should load on literally any version of Minecraft, using [Quilt](https://quiltmc.org).
 
-This template on the QuiltMC GitHub is licensed under the [Creative Common Zero v1.0 license](./LICENSE-TEMPLATE.md).
+## Crafting
 
-Mods created with this template are not automatically licensed under the CC0, and are not required to give any kind of credit back to QuiltMC for this template.
+You can get crosses and circles by crafting them with sticks:
+
+[![Crafting cross](./medias/cross_craft.png)](./medias/cross_craft.png)
+[![Crafting circle](./medias/circle_craft.png)](./medias/circle_craft.png)
+
+## Wait.. 19,682 recipes? *Why?*
+
+Because it was a nice way to bother [@LambdAurora](https://modrinth.com/user/LambdAurora). It also coincidentally serves as
+a good benchmark for the Quilt resource loader.
+
+If you are curious, yes, there are actually 19.682 JSON recipes. There are located in [`src/main/resources/data/tictaccursed/recipes/generated`](./src/main/resources/data/tictaccursed/recipes/generated)
+and generated using [`./gen_recipes.py`](./gen_recipes.py). Yeah, even I don't hate myself enough to do them by hand.
+
+## Can I get a port to X?
+
+Okay, first off, why do you even want a port? What's wrong with you? But also no.
+
+## Should I even be using this mod?
+
+I meaaaaaaaaaaaaan.. you *can* but please don't bother me if your modpack takes too long to load. I warned you.
+
+## How can I contribute?
+
+I, uh, *looks around*. There isn't much to contribute? But if you have a penny to spare, you can contribute to the
+[Trevor project](https://www.thetrevorproject.org/) instead!

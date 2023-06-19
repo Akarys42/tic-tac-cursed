@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "T T",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tictaccursed:circle",
+    "count": 1
+  }
+}

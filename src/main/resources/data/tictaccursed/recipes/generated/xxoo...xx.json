@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXO",
+        "O  ",
+        " XX"
+    ],
+    "key": {
+        "X": {
+            "item": "tictaccursed:cross"
+        },
+        "O": {
+            "item": "tictaccursed:circle"
+        }
+    },
+    "result": {
+        "item": "tictaccursed:unknown",
+        "count": 1
+    }
+}

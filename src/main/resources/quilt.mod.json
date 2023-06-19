@@ -1,40 +1,34 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "me.akarys",
+		"id": "tictaccursed",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Tic Tac Cursed",
+			"description": "Tic-Tac-Toe made with only 19,682 recipes. Not cursed at all!",
 			"contributors": {
-				"Your name here": "Owner"
+				"Ambre Bertucci": "Owner"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"issues": "https://github.com/Akarys42/tic-tac-cursed/issues",
+				"sources": "https://github.com/Akarys42/tic-tac-cursed"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/tictaccursed/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "me.akarys.tictaccursed.CursedMod"
 		},
 		"depends": [
 			{
 				"id": "quilt_loader",
-				"versions": ">=0.19.1"
-			},
-			{
-				"id": "quilted_fabric_api",
-				"versions": ">=7.0.2"
+				"versions": "*"
 			},
 			{
 				"id": "minecraft",
-				"versions": ">=1.20"
+				"versions": "*"
 			}
 		]
-	},
-	"mixin": "example_mod.mixins.json"
+	}
 }
