@@ -30,8 +30,11 @@ def main():
     TARGET_FOLDER.mkdir(parents=True, exist_ok=True)
 
     # Empty the folder
-    for file in TARGET_FOLDER.iterdir():
+    for file in TARGET_FOLDER.glob("**/*.json"):
         file.unlink()
+
+    for folder in TARGET_FOLDER.iterdir():
+      folder.rmdir()
 
     for recipe in itertools.product(['X', 'O', ' '], repeat=9):
         # Skip all empty recipes
@@ -75,7 +78,11 @@ def main():
             new_recipe["key"]["O"] = O_KEY
 
         # Write the recipe
-        with open(TARGET_FOLDER / f"{recipe_string.replace(' ', '.').lower()}.json", "w") as f:
+        simple_id = recipe_string.replace(' ', '.').lower()
+
+        dest_folder = TARGET_FOLDER / f"{simple_id[:3]}"
+        dest_folder.mkdir(exist_ok=True)
+        with open(dest_folder / f"{simple_id}.json", "w") as f:
             json.dump(new_recipe, f, indent=4)
 
 
